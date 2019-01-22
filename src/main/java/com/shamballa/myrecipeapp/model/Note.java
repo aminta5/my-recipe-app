@@ -12,6 +12,7 @@ public class Note {
     @OneToOne
     private Recipe recipe;
 
+    @Lob
     private String notes;
 
     public Long getId() {
