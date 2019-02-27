@@ -1,11 +1,13 @@
 package com.shamballa.myrecipeapp.model;
 
+import lombok.*;
 import org.hibernate.annotations.GeneratorType;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+@Data
 @Entity
 public class UnitMeasure {
 
@@ -15,19 +17,4 @@ public class UnitMeasure {
 
     private String measure;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getMeasure() {
-        return measure;
-    }
-
-    public void setMeasure(String measure) {
-        this.measure = measure;
-    }
 }
